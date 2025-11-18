@@ -1,0 +1,105 @@
+---
+// src/components/Projects.astro
+import { Image } from "astro:assets";
+---
+
+<section
+  id='proyectos'
+  class='section-padding bg-white'>
+  <div class='container mx-auto px-6'>
+    <div class='text-center mb-16 scroll-animate opacity-0'>
+      <h2 class='text-4xl font-bold text-gray-800 mb-4'>
+        Proyectos Destacados
+      </h2>
+      <p class='text-xl text-gray-600 max-w-2xl mx-auto'>
+        Conoce algunos de nuestros proyectos más representativos desarrollados a
+        lo largo de los años.
+      </p>
+    </div>
+
+    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <!-- Proyecto 1 -->
+      <div
+        class='group relative overflow-hidden rounded-2xl shadow-lg scroll-animate opacity-0'>
+        <Image
+          src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='Residencial Las Palmas'
+          inferSize={true}
+          class='w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110'
+        />
+        <div
+          class='absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6'>
+          <div>
+            <h3 class='text-white text-xl font-bold mb-2'>
+              Residencial Las Palmas
+            </h3>
+            <p class='text-white/80'>
+              120 viviendas sostenibles en Guadalajara
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div
+        class='group relative overflow-hidden rounded-2xl shadow-lg scroll-animate opacity-0'
+        style='animation-delay: 0.1s'>
+        <Image
+          src='https://images.unsplash.com/photo-1565363887735-c63cb07cf57e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='Condominio Los Pinos'
+          inferSize={true}
+          class='w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110'
+        />
+        <div
+          class='absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6'>
+          <div>
+            <h3 class='text-white text-xl font-bold mb-2'>
+              Condominio Los Pinos
+            </h3>
+            <p class='text-white/80'>80 departamentos en Mazatlán</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div
+        class='group relative overflow-hidden rounded-2xl shadow-lg scroll-animate opacity-0'
+        style='animation-delay: 0.2s'>
+        <Image
+          src='https://images.unsplash.com/photo-1582610116397-edb318620f90?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='Villas del Mar'
+          inferSize={true}
+          class='w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110'
+        />
+        <div
+          class='absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6'>
+          <div>
+            <h3 class='text-white text-xl font-bold mb-2'>Villas del Mar</h3>
+            <p class='text-white/80'>Comunidad costera en Puerto Vallarta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='text-center mt-12 scroll-animate opacity-0'>
+      <a
+        href='#'
+        class='inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors'>
+        Ver todos los proyectos
+        <svg
+          class='w-4 h-4 ml-2'
+          fill='none'
+          stroke='currentColor'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M14 5l7 7m0 0l-7 7m7-7H3'
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

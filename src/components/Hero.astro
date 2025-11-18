@@ -1,0 +1,62 @@
+---
+// src/components/Hero.astro
+import { Image } from "astro:assets";
+import logo from "/src/assets/APVPP.png";
+---
+
+<section
+  id='inicio'
+  class='min-h-screen flex items-center justify-center gradient-bg text-white pt-20 relative overflow-hidden'>
+  <div
+    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1489370321024-e0410ad08da4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-top opacity-20">
+  </div>
+  <div class='container mx-auto px-6 text-center relative'>
+    <div class='scroll-animate opacity-0'>
+      <!-- <Image
+        src={logo}
+        alt='APVP logo'
+        class='mx-auto'
+      /> -->
+      <h1 class='text-5xl md:text-7xl font-bold mb-6'>
+        Asociación Patronal para la Vivienda del Pacífico A.C
+      </h1>
+      <p class='text-xl md:text-2xl mb-8 max-w-3xl mx-auto'>
+        Construyendo sueños, forjando hogares. Más de 20 años dedicados a
+        brindar soluciones habitacionales de calidad.
+      </p>
+      <div class='flex flex-col sm:flex-row gap-4 justify-center'>
+        <a
+          href='#servicios'
+          class='bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors'>
+          Nuestros Servicios
+        </a>
+        <a
+          href='#contacto'
+          class='border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors'>
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Flecha indicadora de scroll -->
+  <div
+    class='absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce'>
+    <a
+      href='#nosotros'
+      class='text-white'>
+      <svg
+        class='w-6 h-6'
+        fill='none'
+        stroke='currentColor'
+        viewBox='0 0 24 24'
+        xmlns='http://www.w3.org/2000/svg'>
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M19 14l-7 7m0 0l-7-7m7 7V3'
+        ></path>
+      </svg>
+    </a>
+  </div>
+</section>

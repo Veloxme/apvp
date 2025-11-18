@@ -1,0 +1,98 @@
+---
+// src/components/About.astro
+import { Image } from "astro:assets";
+const logo =
+  "https://images.unsplash.com/photo-1587440871875-191322ee64b0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+//https://images.unsplash.com/photo-1587440871875-191322ee64b0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+<section
+  id='nosotros'
+  class='section-padding bg-white'>
+  <div class='container mx-auto px-6'>
+    <div class='flex flex-col lg:flex-row items-center gap-12'>
+      <!-- Imagen -->
+      <div class='w-full lg:w-1/2 scroll-animate opacity-0'>
+        <div class='relative'>
+          <Image
+            src={logo}
+            inferSize={true}
+            alt='Nuestra asociación'
+            class='rounded-2xl shadow-xl w-full h-auto'
+          />
+          <div
+            class='absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl shadow-lg'>
+            <p class='text-3xl font-bold'>20+</p>
+            <p class='text-sm'>Años de experiencia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class='w-full lg:w-1/2 scroll-animate opacity-0'>
+        <h2 class='text-4xl font-bold text-gray-800 mb-6'>Sobre Nosotros</h2>
+        <p class='text-gray-600 mb-6'>
+          La Asociación Patronal para la Vivienda del Pacífico A.C. es una
+          organización sin fines de lucro comprometida con el desarrollo de
+          soluciones habitacionales accesibles y de calidad para las comunidades
+          del Pacífico mexicano.
+        </p>
+        <p class='text-gray-600 mb-8'>
+          Desde nuestra fundación, hemos trabajado incansablemente para ofrecer
+          viviendas dignas, promoviendo el desarrollo comunitario y mejorando la
+          calidad de vida de miles de familias.
+        </p>
+
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <div class='flex items-start'>
+            <div class='bg-blue-100 p-3 rounded-lg mr-4'>
+              <svg
+                class='w-6 h-6 text-blue-600'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'>
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class='font-bold text-gray-800 mb-2'>Compromiso</h3>
+              <p class='text-gray-600 text-sm'>
+                Trabajamos con transparencia y responsabilidad.
+              </p>
+            </div>
+          </div>
+
+          <div class='flex items-start'>
+            <div class='bg-blue-100 p-3 rounded-lg mr-4'>
+              <svg
+                class='w-6 h-6 text-blue-600'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'>
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z'
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class='font-bold text-gray-800 mb-2'>Comunidad</h3>
+              <p class='text-gray-600 text-sm'>
+                Fomentamos el desarrollo comunitario integral.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
